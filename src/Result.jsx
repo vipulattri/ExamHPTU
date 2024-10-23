@@ -84,6 +84,7 @@ const Result = () => {
                                     <td className="py-2 px-4 border">{item.student_branch}</td>
                                     <td className="py-2 px-4 border">
                                         <a
+                                        className='text-blue-500 underline hover:text-blue-700 transition-colors duration-200'
                                             href={`https://vidyahptu.xperiment.cloud/pdf_output/${item.roll}_${item.url_id}.pdf`}
                                             target="_blank"
                                             

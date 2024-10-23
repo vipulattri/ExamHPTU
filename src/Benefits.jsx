@@ -2,8 +2,22 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'tailwindcss/tailwind.css'; // Ensure Tailwind CSS is imported
+import { useNavigate } from 'react-router-dom';
 
 const Benefits = () => {
+  const navigate = useNavigate(); // Move useNavigate outside of useEffect
+
+  // Define CheckRank function
+  const CheckRank = () => {
+    navigate('/rank'); // Use the navigate function to go to '/rank'
+  };
+  const CheckResult = () => {
+    navigate('/result')
+  }
+  const checkPYQ = () => {
+    navigate('/pyq')
+  }
+
   useEffect(() => {
     // Register the ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
@@ -47,6 +61,8 @@ const Benefits = () => {
             <h3 className="text-xl font-semibold text-black mb-2">
               Access all your semester results in one place
             </h3>
+            <button onClick={CheckResult} className='bg-blue-500 rounded-full pl-4 pr-4 py-2 text-white hover:bg-blue-600 transition duration-200'>Check Now</button>
+
           </div>
           <div className="benefit-item text-center">
             <div className="bg-gray-100 rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-4">
@@ -59,6 +75,9 @@ const Benefits = () => {
             <h3 className="text-xl font-semibold text-black mb-2">
               Check your rank across all of Himachal Pradesh
             </h3>
+            <button onClick={CheckRank} className='bg-blue-500 my-1 rounded-full pl-4 pr-4 py-2 text-white hover:bg-blue-600 transition duration-200'>
+              Check Now
+            </button>
           </div>
           <div className="benefit-item text-center">
             <div className="bg-gray-100 rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-4">
@@ -71,6 +90,8 @@ const Benefits = () => {
             <h3 className="text-xl font-semibold text-black mb-2">
               Access previous year's questions
             </h3>
+            <button onClick={checkPYQ} className='bg-blue-500 rounded-full pl-4 pr-4 py-2 text-white hover:bg-blue-600 my-7 transition duration-200'>Access PYQ</button>
+
           </div>
         </div>
       </div>

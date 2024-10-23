@@ -1,0 +1,48 @@
+/* Footer.css */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: gray; /* Light beige background */
+    border-top: 5px solid  black; /* Pink border for a playful touch */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: Arial, sans-serif; /* Clean font */
+  }
+  
+  .developer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width */
+    max-width: 800px; /* Optional max width */
+  }
+  
+  .developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .developer img {
+    border-radius: 50%;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    margin: 10px;
+    border: 3px solid black; /* Pink border around images */
+  }
+  
+  .developer p {
+    color: #333; /* Dark gray text for contrast */
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .developer-info {
+      flex-direction: column; /* Stack on smaller screens */
+      align-items: center; /* Center items */
+    }
+  }

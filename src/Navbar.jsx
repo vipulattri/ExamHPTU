@@ -13,7 +13,7 @@ const NavBar = () => {
     <nav className="bg-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <img src="ExamHPTUlogo" alt="Logo" className="h-10" />
+          <img src="ExamHPTUlogo.gif" alt="Logo" className="h-10" />
         </div>
         <div className="block lg:hidden">
           <button onClick={toggleMobileMenu} className="text-black focus:outline-none">

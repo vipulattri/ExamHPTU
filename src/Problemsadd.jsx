@@ -57,7 +57,7 @@ const ProblemsAdd = () => {
           <div className="image-container">
             <img alt="Illustration of performance visibility" className="mx-auto mb-4 hover:scale-110 transition-transform duration-300" height="100" src="https://storage.googleapis.com/a1aa/image/LxHmCn4R9EJyNN9gn8u7CjrUT0TcZZdjauxIpXfhB8Evqh0JA.jpg" width="100" />
           </div>
-          <h3 className="text-xl font-bold mb-2">Students lack visibility into their overall performance compared to peers across Himachal Pradesh (HPT U)</h3>
+          <h3 className="text-xl font-bold mb-2">Students lack visibility into their overall performance compared to peers across Himachal Pradesh (HPTU)</h3>
           <p>Our platform will provide students with insights into their performance compared to their peers, helping them understand where they stand and how they can improve.</p>
         </div>
         <div className="problem-card bg-blue-500 p-6 rounded-lg shadow-lg text-center text-white">

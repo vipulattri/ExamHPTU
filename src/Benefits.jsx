@@ -5,18 +5,26 @@ import 'tailwindcss/tailwind.css'; // Ensure Tailwind CSS is imported
 import { useNavigate } from 'react-router-dom';
 
 const Benefits = () => {
-  const navigate = useNavigate(); // Move useNavigate outside of useEffect
+  const navigate = useNavigate(); // useNavigate hook for navigation
 
   // Define CheckRank function
   const CheckRank = () => {
-    navigate('/rank'); // Use the navigate function to go to '/rank'
+    navigate('/rank');
+    window.scrollTo(0, 0); // Scroll to the top
+    window.location.reload(); // Reload the page
   };
+
   const CheckResult = () => {
-    navigate('/result')
-  }
+    navigate('/result');
+    window.scrollTo(0, 0); // Scroll to the top
+    window.location.reload(); // Reload the page
+  };
+
   const checkPYQ = () => {
-    navigate('/pyq')
-  }
+    navigate('/pyq');
+    window.scrollTo(0, 0); // Scroll to the top
+    window.location.reload(); // Reload the page
+  };
 
   useEffect(() => {
     // Register the ScrollTrigger plugin
@@ -62,7 +70,6 @@ const Benefits = () => {
               Access all your semester results in one place
             </h3>
             <button onClick={CheckResult} className='bg-blue-500 rounded-full pl-4 pr-4 py-2 text-white hover:bg-blue-600 transition duration-200'>Check Now</button>
-
           </div>
           <div className="benefit-item text-center">
             <div className="bg-gray-100 rounded-full w-24 h-24 mx-auto flex items-center justify-center mb-4">
@@ -91,7 +98,6 @@ const Benefits = () => {
               Access previous year's questions
             </h3>
             <button onClick={checkPYQ} className='bg-blue-500 rounded-full pl-4 pr-4 py-2 text-white hover:bg-blue-600 my-7 transition duration-200'>Access PYQ</button>
-
           </div>
         </div>
       </div>

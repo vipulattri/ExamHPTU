@@ -1,7 +1,19 @@
 import React, { useEffect, useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const navigate = useNavigate(); // Move useNavigate outside of useEffect
+
+  // Define CheckRank function
+  const CheckRank = () => {
+    navigate('/rank'); // Use the navigate function to go to '/rank'
+  };
+  const CheckResult = () => {
+    navigate('/result')
+  }
+  const checkPYQ = () => {
+    navigate('/pyq')
+  }
 
     // Array of slides with unique titles, descriptions, and buttons
     const slides = [
@@ -9,22 +21,22 @@ const Slider = () => {
             imgSrc: "https://images.bhaskarassets.com/webp/thumb/512x0/web2images/521/2022/09/18/4d7e732c-f479-4e5a-89f7-6db0e7e08f10_1663498640139.jpg",
             title: "Welcome to Exam HPTU",
             description: "This is an open-source project developed by the students of Himachal Pradesh Technical University (HPTU).",
-            buttonText: "Learn More",
-            buttonLink: "#"
+            buttonText: "Check Result",
+            buttonLink: "/result"
         },
         {
             imgSrc: "https://media.licdn.com/dms/image/v2/D5622AQG9Ze898O5Obg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1704519232897?e=2147483647&v=beta&t=hLKko9qc_weHEaC_dotv--yavhZwqbtUqubmo-fc5FQ",
-            title: "HPTU Event Highlights",
-            description: "Stay updated with the latest happenings at HPTU through this slideshow showcasing various events.",
+            title: "Check Rank",
+            description: "Check your rank across all of Himachal Pradesh",
             buttonText: "View Events",
-            buttonLink: "#"
+            buttonLink: "/rank"
         },
         {
             imgSrc: "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/campusview/2023/8/3cb9f1a378ceb992892415546.jpg",
-            title: "Campus Life at HPTU",
-            description: "Experience the vibrant campus life and facilities provided by HPTU, fostering innovation and creativity.",
+            title: "PYQ",
+            description: "  Access previous year's questions",
             buttonText: "Explore Campus",
-            buttonLink: "#"
+            buttonLink: "/pyq"
         }
     ];
 

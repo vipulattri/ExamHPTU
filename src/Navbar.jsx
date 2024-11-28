@@ -36,7 +36,7 @@ const NavBar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div>
             {/* Adjusted logo size for mobile view */}
-            <img src="src/Exam-HPTU-unscreen.gif" alt="Logo" className="h-20 w-20 lg:h-15" />
+            <img src="logo.jpg" alt="Logo" className="h-5 w-15 lg:h-15" />
           </div>
           <div className="block lg:hidden">
             {/* Mobile menu toggle button */}

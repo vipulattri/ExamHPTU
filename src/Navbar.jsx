@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -45,23 +46,23 @@ const NavBar = () => {
             </button>
           </div>
           <ul className={`hidden lg:flex space-x-6 text-black`}>
-            <li><a href="/" className="hover:text-blue-500">Home</a></li>
-            <li><a href="/rank" className="hover:text-blue-500">Rank</a></li>
-            <li><a href="/result" className="hover:text-blue-500">Result</a></li>
-            <li><a href="/pyq" className="hover:text-blue-500">PYQ</a></li>
-            <li><a href="/joinourteam" className="hover:text-blue-500">Join our team</a></li>
-            <li><a href="/contactus" className="hover:text-blue-500">Contact us</a></li>
+            <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
+            <li><Link to="/rank" className="hover:text-blue-500">Rank</Link></li>
+            <li><Link to="/result" className="hover:text-blue-500">Result</Link></li>
+            <li><Link to="/pyq" className="hover:text-blue-500">PYQ</Link></li>
+            <li><Link to="/joinourteam" className="hover:text-blue-500">Join our team</Link></li>
+            <li><Link to="/contactus" className="hover:text-blue-500">Contact us</Link></li>
           </ul>
         </div>
 
         {/* Mobile Menu */}
         <ul className={`lg:hidden flex-col space-y-4 mt-4 text-black ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-          <li><a href="/" className="block px-4 py-2 hover:bg-blue-200">Home</a></li>
-          <li><a href="/rank" className="block px-4 py-2 hover:bg-blue-200">Rank</a></li>
-          <li><a href="/result" className="block px-4 py-2 hover:bg-blue-200">Result</a></li>
-          <li><a href="/pyq" className="block px-4 py-2 hover:bg-blue-200">PYQ</a></li>
-          <li><a href="/joinourteam" className="block px-4 py-2 hover:bg-blue-200">Join our team</a></li>
-          <li><a href="/contactus" className="block px-4 py-2 hover:bg-blue-200">Contact us</a></li>
+          <li><Link to="/" className="block px-4 py-2 hover:bg-blue-200">Home</Link></li>
+          <li><Link to="/rank" className="block px-4 py-2 hover:bg-blue-200">Rank</Link></li>
+          <li><Link to="/result" className="block px-4 py-2 hover:bg-blue-200">Result</Link></li>
+          <li><Link to="/pyq" className="block px-4 py-2 hover:bg-blue-200">PYQ</Link></li>
+          <li><Link to="/joinourteam" className="block px-4 py-2 hover:bg-blue-200">Join our team</Link></li>
+          <li><Link to="/contactus" className="block px-4 py-2 hover:bg-blue-200">Contact us</Link></li>
         </ul>
       </nav>
 

@@ -25,6 +25,47 @@ const PYQ = () => {
       "year": 2023,
       "link": "https://drive.google.com/file/d/1MUxoBYdbP4K5ncu0812BP-CD2nPYZEFI/view?usp=drive_link"
     },
+    
+    {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "se",
+      "year": 2024,
+      "link": "https://www.vaishno.edu.in/downloads/nimages/CS-505.pdf"
+    },
+
+       {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "cn",
+      "year": 2024,
+      "link": "https://www.vaishno.edu.in/downloads/nimages/CS-505.pdf"
+    },
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "cn",
+      "year": 2024,
+      "link": "https://www.vaishno.edu.in/downloads/nimages/CS-505.pdf"
+    },
+    
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "cn",
+      "year": 2024,
+      "link": "https://www.vaishno.edu.in/downloads/nimages/cs-506.pdf"
+    },
+    
+    {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "cg",
+      "year": 2024,
+      "link": "https://www.vaishno.edu.in/downloads/nimages/cs-503.pdf"
+    },
     {
       "sem": "1st",
       "branch": "all",

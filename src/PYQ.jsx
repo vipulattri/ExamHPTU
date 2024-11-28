@@ -18,13 +18,47 @@ const PYQ = () => {
       "year": 2023,
       "link": "https://drive.google.com/file/d/1lMy7X8b_BnWouzGGoyLFyX99pw_Sm7x3/view?usp=drive_link"
     },
-    {
-      "sem": "1st",
-      "branch": "all",
-      "subject": "Applied_Physics",
-      "year": 2023,
-      "link": "https://drive.google.com/file/d/1MUxoBYdbP4K5ncu0812BP-CD2nPYZEFI/view?usp=drive_link"
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "ncepg",
+      "year": 2019,
+      "link": "https://drive.google.com/file/d/11wyqKAYj9IRH5iJC_GmCpTA9iQ_g-mZ2/view?usp=drive_link"
     },
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "ncepg",
+      "year": 2022,
+      "link": "https://drive.google.com/file/d/11uw1oSMrgEH1bkPSZDv59zMjDb5mGtU6/view?usp=drive_link"
+    },
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "ncepg",
+      "year": 2018,
+      "link": "https://drive.google.com/file/d/11n4D5fJgdozgYKc2xGB05c9twrOJ7ip8/view?usp=drive_link"
+    },
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "ncepg",
+      "year": 2023,
+      "link": "https://drive.google.com/file/d/1lMy7X8b_BnWouzGGoyLFyX99pw_Sm7x3/view?usp=drive_link"
+    },
+
+     {
+      "sem": "5th",
+      "branch": "cse",
+      "subject": "ncepg",
+      "year": 2015,
+      "link": "https://drive.google.com/file/d/11uw1oSMrgEH1bkPSZDv59zMjDb5mGtU6/view?usp=drive_link"
+    },
+ 
     
     {
       "sem": "5th",

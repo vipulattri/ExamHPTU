@@ -54,17 +54,7 @@ const Developers = () => {
         <h1 className="text-3xl font-bold text-gray-800 mt-2">Website Developers</h1>
       </div>
       <div className="flex justify-center space-x-6">
-        <div className="text-center">
-          <img
-            alt=""
-            className="w-24 h-24 rounded-full mx-auto"
-            height="100"
-            src="https://vidyahptu.xperiment.cloud/assets/img/jaswalaryan.jpg"
-            width="100"
-          />
-          <h3 className="text-lg font-semibold mt-4">Aryan Jaswal</h3>
-          <p className="text-gray-500"></p>
-        </div>
+       
         <div className="text-center">
           <img
             alt=""

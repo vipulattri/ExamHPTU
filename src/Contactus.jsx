@@ -1,8 +1,14 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import contactImage from './contact2.6c5d9556.svg'; // Import image
 
 const Contactus = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', mobile: '', message: '' });
+  const [formData, setFormData] = useState({
+    user_name: '', // Updated keys
+    from_email: '',
+    message: ''
+  });
+
   const form = useRef();
 
   const handleChange = (e) => {
@@ -12,9 +18,13 @@ const Contactus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Send email using EmailJS
     try {
-      await emailjs.sendForm('service_dohmh93', 'template_ut90tlm', form.current, 'HAPGj3NJ2c51ZMiTb');
+      await emailjs.sendForm(
+        'service_dohmh93',
+        'template_ut90tlm',
+        form.current,
+        'HAPGj3NJ2c51ZMiTb'
+      );
       alert('Email sent successfully!');
     } catch (error) {
       console.error('Failed to send email:', error);
@@ -32,34 +42,36 @@ const Contactus = () => {
               <div className="mb-4">
                 <input
                   className="w-full px-3 py-2 border rounded"
-                  name="user_name" // Updated name attribute
+                  name="user_name"
                   placeholder="Name"
                   type="text"
-                  value={formData.name}
+                  value={formData.user_name}
                   onChange={handleChange}
                 />
               </div>
               <div className="mb-4">
                 <input
                   className="w-full px-3 py-2 border rounded"
-                  name="from_email" // Updated name attribute
+                  name="from_email"
                   placeholder="Email"
                   type="email"
-                  value={formData.email}
+                  value={formData.from_email}
                   onChange={handleChange}
                 />
               </div>
-              
               <div className="mb-4">
                 <textarea
                   className="w-full px-3 py-2 border rounded"
-                  name="message" // Correctly matches formData state
+                  name="message"
                   placeholder="Message"
                   value={formData.message}
                   onChange={handleChange}
                 />
               </div>
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded" type="submit">
+              <button
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded"
+                type="submit"
+              >
                 Submit
               </button>
             </form>
@@ -69,7 +81,7 @@ const Contactus = () => {
               alt="Illustration of a customer service representative"
               className="rounded-lg"
               height="400"
-              src="src/contact2.6c5d9556.svg"
+              src={contactImage}
               width="400"
             />
           </div>

@@ -1499,8 +1499,8 @@ const PYQ = () => {
     const hour = new Date().getHours();
     if (hour < 12) return 'Good Morning ☀️';
     if (hour < 18) return 'Good Afternoon ☀️';
-    if( hour>18 && hour<=21) return 'Good Evening  ☾';
-    if(hour>21) return 'Good night Take a dream ⋆';
+    if( hour>18 && hour<=21) return 'Good Evening  ☾ ';
+    if(hour>21) return 'Good night Take a dream ⋆ ';
     return 'Good Evening';
   };
 
@@ -1523,14 +1523,20 @@ const PYQ = () => {
               className="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"
               placeholder="Your Name"
               value={userName}
+              if(e.target.value = "") {
+                      <h4>Please Enter your name </h4>
+                else {
+
               onChange={(e) => setUserName(e.target.value)}
             />
+                
             <button
               className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 mt-4 rounded"
               onClick={() => setShowWelcome(true)}
             >
               Submit
             </button>
+                }
           </div>
         </div>
       ) : (
